@@ -5,8 +5,7 @@ public class retirementcalc
 {
 	public static void main(String[] args) 
 	{
-		double whatyouneedsaved=1;
-		double saveeachmonth=1;
+		
 		System.out.printf("You need to save $ %.2f throughout your entire career.",whatyouneedsaved);
 		System.out.printf("\nYou need to save $ %.2f from now on until retirement.",saveeachmonth);
 	}
@@ -27,7 +26,9 @@ public class retirementcalc
 		reqincome=input.nextDouble();
 		System.out.println("what is your monthly SSI(expected Social Security) income?");
 		monthlyssi=input.nextDouble();
-		return yearstowork annualreturn yearsretired reqincome monthlyssi
 	}
-	public static void domath(yearstowork,annualreturn,requincome,monthlyssi)
+	public static void domath(yearstowork,annualreturn,requincome,monthlyssi){
+		double whatyouneedsaved=1;
+		double saveeachmonth=1;
+	}
 }
