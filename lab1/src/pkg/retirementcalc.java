@@ -29,6 +29,7 @@ public class retirementcalc
 		monthlyssi=input.nextDouble();
 		
 		//The following two equations are implementations of the annuity calculator formulas. 
+		//Every calculator online came up with numbers close to $1,454,485.55 but are not exact.
 		double whatyouneedsaved = ((reqincome-monthlyssi)*12)*((1-(Math.pow(1+annualreturnret,-yearsretired)))/annualreturnret);
 		double saveeachmonth = whatyouneedsaved*((annualreturnwork/12)/(Math.pow(1+(annualreturnwork/12),yearstowork*12)-1));
 		System.out.printf("You need to save $ %.2f throughout your entire career.",whatyouneedsaved);
